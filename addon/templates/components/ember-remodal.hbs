@@ -23,6 +23,7 @@
   {{/if}}
 
   {{#if hasBlock}}
+    {{#if isOpen}}
     <div class="ember-remodal inner yielded content" data-test-id="yielded">
       {{yield (hash
         open=(component 'ember-remodal/er-button' modalId=elementId)
@@ -30,6 +31,7 @@
         cancel=(component 'ember-remodal/er-button' action=(action 'cancel'))
       )}}
     </div>
+    {{/if}}
   {{/if}}
 
   {{#if cancelButton}}

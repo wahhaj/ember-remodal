@@ -25,6 +25,7 @@ export default Component.extend({
   modifier: '',
   modal: null,
   options: null,
+  isOpen: false,
   closeOnEscape: true,
   closeOnCancel: true,
   closeOnConfirm: true,
@@ -71,10 +72,12 @@ export default Component.extend({
   }),
 
   closeDidFire: on('closed', function() {
+    this.set('isOpen', false); 
     this.sendAction('onClose');
   }),
 
   open() {
+    this.set('isOpen', true);
     return this._promiseAction('open');
   },
 
