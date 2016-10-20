@@ -1,9 +1,9 @@
 {{#if linkButton}}
-  <a {{action 'open'}} href="#" class="ember-remodal outer link text {{buttonClasses}} {{outerButtonClasses}}" data-test-id="linkButton">{{linkButton}}</a>
+  <a {{action 'open' bubbles=bubbleOpen}} href="#" class="ember-remodal outer link text {{buttonClasses}} {{outerButtonClasses}}" data-test-id="linkButton">{{linkButton}}</a>
 {{else if openLink}}
-  <a {{action 'open'}} href="#" class="ember-remodal outer link text {{buttonClasses}} {{outerButtonClasses}} {{openLinkClasses}}" data-test-id="openLink">{{openLink}}</a>
+  <a {{action 'open' bubbles=bubbleOpen}} href="#" class="ember-remodal outer link text {{buttonClasses}} {{outerButtonClasses}} {{openLinkClasses}}" data-test-id="openLink">{{openLink}}</a>
 {{else if openButton}}
-  <button {{action 'open'}} class="ember-remodal outer open button {{buttonClasses}} {{outerButtonClasses}} {{openButtonClasses}}" data-test-id="openButton">{{openButton}}</button>
+  <button {{action 'open' bubbles=bubbleOpen}} class="ember-remodal outer open button {{buttonClasses}} {{outerButtonClasses}} {{openButtonClasses}}" data-test-id="openButton">{{openButton}}</button>
 {{/if}}
 
 <span {{action 'open'}} id="open-button-{{elementId}}"></span>

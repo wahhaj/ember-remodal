@@ -26,6 +26,7 @@ export default Component.extend({
   modal: null,
   options: null,
   isOpen: false,
+  bubbleOpen: true,
   hasButton: or('cancelButton', 'confirmButton'),
   closeOnEscape: true,
   closeOnCancel: true,
@@ -73,7 +74,7 @@ export default Component.extend({
   }),
 
   closeDidFire: on('closed', function() {
-    this.set('isOpen', false); 
+    this.set('isOpen', false);
     this.sendAction('onClose');
   }),
 
