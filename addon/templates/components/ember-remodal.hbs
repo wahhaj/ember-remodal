@@ -38,11 +38,16 @@
     {{/if}}
   {{/if}}
 
-  {{#if cancelButton}}
-    <button {{action 'cancel'}} class="ember-remodal inner cancel button {{buttonClasses}} {{innerButtonClasses}} {{cancelButtonClasses}}" data-test-id="cancelButton">{{cancelButton}}</button>
+  {{#if hasButton}}
+    <div class="modal-footer">
+      {{#if cancelButton}}
+        <button {{action 'cancel'}} class="ember-remodal inner cancel button {{buttonClasses}} {{innerButtonClasses}} {{cancelButtonClasses}}" data-test-id="cancelButton">{{cancelButton}}</button>
+      {{/if}}
+
+      {{#if confirmButton}}
+        <button {{action 'confirm'}} class="ember-remodal inner confirm button {{buttonClasses}} {{innerButtonClasses}} {{confirmButtonClasses}}" data-test-id="confirmButton">{{confirmButton}}</button>
+      {{/if}}
+    </div>
   {{/if}}
 
-  {{#if confirmButton}}
-    <button {{action 'confirm'}} class="ember-remodal inner confirm button {{buttonClasses}} {{innerButtonClasses}} {{confirmButtonClasses}}" data-test-id="confirmButton">{{confirmButton}}</button>
-  {{/if}}
 </div>

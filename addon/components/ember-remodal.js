@@ -4,7 +4,7 @@ import layout from '../templates/components/ember-remodal';
 const {
   inject,
   computed,
-  computed: { reads },
+  computed: { or, reads },
   getOwner,
   on,
   RSVP: { Promise },
@@ -26,6 +26,7 @@ export default Component.extend({
   modal: null,
   options: null,
   isOpen: false,
+  hasButton: or('cancelButton', 'confirmButton'),
   closeOnEscape: true,
   closeOnCancel: true,
   closeOnConfirm: true,
