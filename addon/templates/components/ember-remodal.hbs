@@ -15,11 +15,15 @@
   {{/unless}}
 
   {{#if title}}
-    <h2 class="ember-remodal inner title text" data-test-id="title">{{title}}</h2>
+    <div class="modal-header">
+      <h2 class="ember-remodal inner title text" data-test-id="title">{{title}}</h2>
+    </div>
   {{/if}}
 
   {{#if text}}
-    <p class="ember-remodal inner paragraph text" data-test-id="text">{{text}}</p>
+    <div class="modal-body">
+      <p class="ember-remodal inner paragraph text" data-test-id="text">{{text}}</p>
+    </div>
   {{/if}}
 
   {{#if hasBlock}}
