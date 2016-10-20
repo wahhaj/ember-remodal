@@ -1,6 +1,6 @@
 {
   "name": "ember-remodal",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An intensely usable modal addon for Ember.js",
   "directories": {
     "doc": "doc",
@@ -11,12 +11,12 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "https://github.com/sethbrasile/ember-remodal",
+  "repository": "https://github.com/wahhaj/ember-remodal",
   "demoURL": "http://sethbrasile.github.io/ember-remodal",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "Seth Brasile <seth.brasile@gmail.com>",
+  "author": "Wahhaj Ali <wahhajj@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
